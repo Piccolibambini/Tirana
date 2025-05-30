@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Posti da Visitare in Albania</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .destination {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .destination:hover {
+      transform: translateY(-5px);
+    }
+    .destination h3 {
+      color: #007BFF;
+      font-size: 1.5em;
+    }
+    .description {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .hidden {
+      display: none;
+      margin-top: 15px;
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    5 Posti da Visitare in Albania
+  </header>
+
+  <div class="container">
+    <div class="destination">
+      <h3>Butrinto</h3>
+      <p class="description">Un antico sito archeologico patrimonio dell'umanità.</p>
+      <button class="button" onclick="toggleDescription('butrinto')">Scopri di più</button>
+      <div id="butrinto" class="hidden">
+        <p>La distanza da Valona è di circa 70 km. Butrinto è un sito archeologico greco-romano che racconta la storia di diverse civiltà.</p>
+      </div>
+    </div>
+
+    <div class="destination">
+      <h3>Gjirokastra</h3>
+      <p class="description">La città di pietra, con le sue case tradizionali.</p>
+      <button class="button" onclick="toggleDescription('gjirokastra')">Scopri di più</button>
+      <div id="gjirokastra" class="hidden">
+        <p>La distanza da Valona è di circa 120 km. Gjirokastra è famosa per la sua architettura ottomana e il castello imponente.</p>
+      </div>
+    </div>
+
+    <div class="destination">
+      <h3>Berat</h3>
+      <p class="description">Conosciuta come la città dalle mille finestre.</p>
+      <button class="button" onclick="toggleDescription('berat')">Scopri di più</button>
+      <div id="berat" class="hidden">
+        <p>La distanza da Valona è di circa 95 km. Berat è famosa per le sue case bianche con finestre in stile ottomano e il castello medievale.</p>
+      </div>
+    </div>
+
+    <div class="destination">
+      <h3>Parco Nazionale di Llogara</h3>
+      <p class="description">Un parco naturale con panorami mozzafiato.</p>
+      <button class="button" onclick="toggleDescription('llogara')">Scopri di più</button>
+      <div id="llogara" class="hidden">
+        <p>La distanza da Valona è di circa 40 km. Il parco offre viste spettacolari sul mare Ionio e sulla costa albanese.</p>
+      </div>
+    </div>
+
+    <div class="destination">
+      <h3>Isola di Sazan</h3>
+      <p class="description">Un'isola dal fascino selvaggio e una storia militare.</p>
+      <button class="button" onclick="toggleDescription('sazan')">Scopri di più</button>
+      <div id="sazan" class="hidden">
+        <p>La distanza da Valona è di circa 25 km. L'isola di Sazan è famosa per le sue fortificazioni militari e per la natura incontaminata.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDescription(id) {
+      const description = document.getElementById(id);
+      if (description.style.display === "none" || description.style.display === "") {
+        description.style.display = "block";
+      } else {
+        description.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
