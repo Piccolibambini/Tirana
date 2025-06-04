@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luoghi da Visitare a Tirana</title>
+    <!-- Includi Tailwind CSS per uno styling rapido e responsive -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Imposta il font Inter per tutto il corpo */
@@ -20,8 +21,10 @@
             Scopri Tirana!
         </h1>
 
+        <!-- Sezione per il primo luogo: Piazza Skanderbeg -->
         <div class="mb-12 p-6 bg-gray-50 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
-            <img src="https://placehold.co/400x250/d1d5db/374151?text=Piazza+Skanderbeg" alt="Piazza Skanderbeg, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
+            <!-- Immagine di Piazza Skanderbeg. Assicurati che il file 'skandenberg.jpeg' sia nella stessa directory. -->
+            <img src="skandenberg.jpeg" alt="Piazza Skanderbeg, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
             <div class="flex-1 text-center md:text-left">
                 <h2 class="text-3xl font-bold text-gray-700 mb-3">Piazza Skanderbeg</h2>
                 <p class="text-gray-600 mb-4">
@@ -33,8 +36,10 @@
             </div>
         </div>
 
+        <!-- Sezione per il secondo luogo: Bunk'Art 2 -->
         <div class="mb-12 p-6 bg-gray-50 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
-            <img src="https://placehold.co/400x250/d1d5db/374151?text=Bunk'Art+2" alt="Bunk'Art 2, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
+            <!-- Immagine di Bunk'Art 2. Assicurati che il file 'Bunk'Art2.jpeg' sia nella stessa directory. -->
+            <img src="Bunk'Art2.jpeg" alt="Bunk'Art 2, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
             <div class="flex-1 text-center md:text-left">
                 <h2 class="text-3xl font-bold text-gray-700 mb-3">Bunk'Art 2</h2>
                 <p class="text-gray-600 mb-4">
@@ -46,8 +51,10 @@
             </div>
         </div>
 
+        <!-- Sezione per il terzo luogo: Il Grande Parco del Lago di Tirana -->
         <div class="mb-12 p-6 bg-gray-50 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
-            <img src="https://placehold.co/400x250/d1d5db/374151?text=Grande+Parco+del+Lago" alt="Il Grande Parco del Lago di Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
+            <!-- Immagine del Grande Parco del Lago. Assicurati che il file 'parcodellago.jpeg' sia nella stessa directory. -->
+            <img src="parcodellago.jpeg" alt="Il Grande Parco del Lago di Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
             <div class="flex-1 text-center md:text-left">
                 <h2 class="text-3xl font-bold text-gray-700 mb-3">Il Grande Parco del Lago</h2>
                 <p class="text-gray-600 mb-4">
@@ -59,16 +66,20 @@
             </div>
         </div>
 
+        <!-- Nuova sezione per la Moschea di Et'hem Bey con audioguida -->
         <div class="p-6 bg-gray-50 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
-            <img src="https://placehold.co/400x250/d1d5db/374151?text=Moschea+Et'hem+Bey" alt="Moschea di Et'hem Bey, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
+            <!-- Immagine della Moschea di Et'hem Bey. Assicurati che il file 'moschea.jpeg' sia nella stessa directory. -->
+            <img src="moschea.jpeg" alt="Moschea di Et'hem Bey, Tirana" class="w-full md:w-1/2 h-auto rounded-lg shadow-md object-cover">
             <div class="flex-1 text-center md:text-left">
                 <h2 class="text-3xl font-bold text-gray-700 mb-3">Moschea di Et'hem Bey</h2>
                 <p class="text-gray-600 mb-4">
                     Una delle moschee più antiche e significative di Tirana, nota per i suoi affreschi dettagliati e la sua architettura ottomana. Si trova proprio accanto alla Torre dell'Orologio.
                 </p>
+                <!-- Tasto per l'audioguida -->
                 <button id="mosqueAudioButton" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     Ascolta Audioguida
                 </button>
+                <!-- Elemento audio nascosto. Assicurati che il file 'moschea.mp3' sia nella stessa directory. -->
                 <audio id="mosqueAudio" src="moschea.mp3" preload="auto"></audio>
             </div>
         </div>
